@@ -1,0 +1,10 @@
+name: kanban_event_shadow
+version: 0.1.0
+kind: standalone
+description: "Shadow-only durable recorder for native Kanban worker exit and stale-claim events."
+author: Hermes control plane
+platforms:
+  - linux
+hooks:
+  - on_kanban_worker_exited
+  - on_kanban_worker_stale_claim

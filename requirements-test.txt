@@ -1,0 +1,6 @@
+# Isolated test/doctor dependencies, not plugin runtime dependencies.
+# Aligned with the pinned Hermes source; no provider or messaging installation.
+ruamel.yaml==0.18.16
+python-dotenv==1.2.2
+rich==14.3.3
+httpx==0.28.1

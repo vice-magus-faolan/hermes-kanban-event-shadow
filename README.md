@@ -50,11 +50,12 @@ Wait for human review and merge before treating `main` as an installable artifac
 For an approved later repo-linked installation, keep one physical checkout at
 `~/source/repos/hermes-kanban-event-shadow`. Each authorized profile plugin path
 may point to that checkout; do not vendor another implementation into the profile.
-For example, after selecting a reviewed artifact and the intended profile:
+The following example is for the **default profile only**, after selecting a
+reviewed artifact. Named profiles need their own home and explicit CLI target:
 
 ```bash
 SOURCE="$HOME/source/repos/hermes-kanban-event-shadow"
-PROFILE_HOME="$HOME/.hermes"  # explicitly choose the intended profile
+PROFILE_HOME="$HOME/.hermes"  # default profile; not a CLI profile selector
 mkdir -p "$PROFILE_HOME/plugins"
 # Refuses if an existing installation has not been separately reconciled.
 ln -s "$SOURCE" "$PROFILE_HOME/plugins/kanban_event_shadow"

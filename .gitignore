@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.test-scratch/
+.venv-test/
+.hermes-runtime-source/
+*.db
+*.db-*
+*.sqlite*
+.env
+.env.*
